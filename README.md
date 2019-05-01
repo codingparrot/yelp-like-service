@@ -10,9 +10,8 @@
 ## How to run and make changes
 1. Clone the repository `git clone `
 2. cd yelp-like-service
-3. Modify the userName and password in application.properties.
-4. gradle bootrun
-5. Running tests
+3. gradle bootrun
+4. Running tests
 
 
 ## How to verify the setup is working
