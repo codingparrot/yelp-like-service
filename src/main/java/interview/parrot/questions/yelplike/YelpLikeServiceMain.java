@@ -1,5 +1,6 @@
 package interview.parrot.questions.yelplike;
 
+import io.prometheus.client.spring.web.EnablePrometheusTiming;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +19,7 @@ import org.springframework.core.env.Environment;
 @EntityScan(basePackageClasses = {YelpLikeServiceMain.class})
 @SpringBootApplication
 @EnableAutoConfiguration
+@EnablePrometheusTiming
 @ComponentScan(basePackages = "interview.parrot.questions.yelplike")
 public class YelpLikeServiceMain {
 

@@ -15,4 +15,6 @@ public class ServiceConfiguration {
     public Hashids hashids() {
         return new Hashids("YelpLikeService", 8);
     }
+
+
 }

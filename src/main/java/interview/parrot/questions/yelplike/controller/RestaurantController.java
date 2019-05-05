@@ -7,6 +7,7 @@ import interview.parrot.questions.yelplike.entity.RestaurantEntity;
 import interview.parrot.questions.yelplike.exception.InvalidInputException;
 import interview.parrot.questions.yelplike.service.RestaurantService;
 import interview.parrot.questions.yelplike.util.TransformationFunctions;
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ import static interview.parrot.questions.yelplike.util.TransformationFunctions.*
  */
 @RestController
 @Log4j2
+@Timed
 public class RestaurantController {
 
     @Autowired
